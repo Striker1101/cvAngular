@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { EXP } from 'src/app/Interface';
+import { EXP_EDU} from 'src/app/Interface';
 @Component({
   selector: 'app-exp-edu',
   templateUrl: './exp-edu.component.html',
@@ -7,7 +7,8 @@ import { EXP } from 'src/app/Interface';
 })
 export class ExpEduComponent implements OnInit {
   @Input() name?: string;
-  @Input() exp_data?: Array<EXP>;
+  @Input() data?: Array<EXP_EDU>;
+  @Input() toggle?: boolean;
   constructor() {}
 
   ngOnInit(): void {}

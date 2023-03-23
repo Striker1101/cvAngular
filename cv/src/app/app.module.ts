@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ExpEduComponent } from './components/exp-edu/exp-edu.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ObjectiveComponent } from './components/objective/objective.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ExpEduComponent } from './components/exp-edu/exp-edu.component';
     HeaderComponent,
     ButtonComponent,
     ProfileComponent,
-    ExpEduComponent
+    ExpEduComponent,
+    ObjectiveComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

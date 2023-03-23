@@ -1,7 +1,8 @@
-export interface EXP {
+export interface EXP_EDU {
   startDate?: string;
   endDate?: string;
   companyName?: string;
-  postion?: string;
-  accomplisment: Array<string>;
+  position?: string;
+  accomplisment?: Array<string>;
+  courseWork?: Array<string>;
 }

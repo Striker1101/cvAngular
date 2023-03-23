@@ -1,7 +1,31 @@
-<div>
+<div class="exp-edu">
   <header>
     <h1>{{ name }}</h1>
-    <app-button></app-button>
+    <app-button text="Add {{ name }}" color="black"></app-button>
   </header>
-  <main></main>
+  <main>
+    <hr />
+    <div class="content" *ngFor="let item of data">
+      <div class="date">
+        <h5>{{ item.startDate }}</h5>
+        <h5>{{ item.endDate }}</h5>
+      </div>
+      <div class="details">
+        <span style="display: flex; gap: 20px">
+          <h5>{{ item.companyName }}</h5>
+          <h5>{{ item.position }}</h5>
+        </span>
+        <div *ngIf="toggle; else education">
+          <ul *ngFor="let item of item.accomplisment">
+            <li>{{item}}</li>
+          </ul>
+        </div>
+        <ng-template #education>
+          <ul *ngFor="let item of item.courseWork">
+            <li>{{item}}</li>
+          </ul>
+        </ng-template>
+      </div>
+    </div>
+  </main>
 </div>
