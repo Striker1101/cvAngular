@@ -1,0 +1,11 @@
+<div class="skills">
+  <header>
+    <h1>{{ title }}</h1>
+    <app-button text="{{ title }}" color="black"></app-button>
+  </header>
+  <main>
+    <ul *ngFor="let skill of skills">
+      <li>{{ skill }}</li>
+    </ul>
+  </main>
+</div>

@@ -9,6 +9,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { ExpEduComponent } from './components/exp-edu/exp-edu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ObjectiveComponent } from './components/objective/objective.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ObjectiveComponent } from './components/objective/objective.component';
     ButtonComponent,
     ProfileComponent,
     ExpEduComponent,
-    ObjectiveComponent
+    ObjectiveComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

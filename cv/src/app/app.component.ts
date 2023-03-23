@@ -8,7 +8,8 @@ import { EXP_EDU } from './Interface';
 })
 export class AppComponent {
   title: string = 'cv';
-  objective:string = " this is our objective space"
+  objective: string = ' this is our objective space';
+  skills: string[] = ['java', 'kotlin', 'cordova'];
   exp_toggle: boolean = true;
   exp_name: string = 'EXPERIENCE';
   exp_data: Array<EXP_EDU> = [

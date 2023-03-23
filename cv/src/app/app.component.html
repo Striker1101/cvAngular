@@ -5,7 +5,11 @@
 
   <div class="main">
     <app-profile></app-profile>
+
     <app-objective description="{{ objective }}"></app-objective>
+
+    <app-skills [skills]="skills"> </app-skills>
+
     <app-exp-edu
       name="{{ exp_name }}"
       [data]="exp_data"
